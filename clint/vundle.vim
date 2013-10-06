@@ -64,6 +64,7 @@ Bundle "honza/vim-snippets"
 " tasklist - creates list with TODO, XXX, FIXME, etc.
 " nerdtree?
 " tabular - text alignment
+" minibufexpl - https://github.com/fholgado/minibufexpl.vim.git
 
 filetype plugin indent on     " required!
 "
