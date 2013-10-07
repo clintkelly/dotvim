@@ -14,3 +14,6 @@ Sym link .vimrc
 ln -s .vim/clint/vimrc.vim .vimrc
 
 Install bundles - run BundleInstall from within vim
+
+Install eclim
+- Run eclimd (daeomon)

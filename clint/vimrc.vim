@@ -10,7 +10,7 @@ syntax on
 
 " Can give you a visual clue if your code is going too far...
 " Requires vim 7.3
-set colorcolumn=100
+" set colorcolumn=100
 
 " Quick shortcut to start conque
 nnoremap <leader>c :ConqueTerm zsh
@@ -27,9 +27,19 @@ source ~/.vim/clint/splitting_and_opening.vim
 source ~/.vim/clint/statusline.vim
 source ~/.vim/clint/color.vim
 
-" Ultisnips should work with tab and shift-tab
+" Set UltiSnips to use something other than tab, so that we can use SuperTab
+" at the same time
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-" Does not work for scala somehow...
+" Enable OmniCompletion
+"set omnifunc=syntaxcomplete#Complete 
+set omnifunc=javacomplete#Complete
+" May be good for java:
+" Also a tip:
+"
+" :set path=**
+" :chdir your/project/root
+" This makes ^wf on a classname a very nice feature for navigating a large
+" project.

@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-unimpaired'
 " Move through files easier
 Bundle 'Lokaltog/vim-easymotion'
 " Easily open files
@@ -40,6 +41,7 @@ Bundle 'Tagbar'
 " Perl5-powered search in vim
 "Bundle 'ack.vim'
 " Tab completion when writing code
+Bundle 'ervandew/supertab'
 "Bundle 'SuperTab'
 "Bundle 'JSON.vim'
 
@@ -53,6 +55,9 @@ Bundle 'spiroid/vim-ultisnip-scala'
 " Scala syntax, etc.
 Bundle 'derekwyatt/vim-scala'
 
+" Specific java support
+Bundle 'vim-scripts/javacomplete.git'
+
 " ...
 " Others to check out
 " abolish - for renaming variables in code
@@ -64,12 +69,12 @@ Bundle 'derekwyatt/vim-scala'
 " Vwrapper - dunno
 " Align - or something else
 " ack - better search than builtin regex
-" supertab - tab autocomplete
 " desert256
 " tasklist - creates list with TODO, XXX, FIXME, etc.
 " nerdtree?
 " tabular - text alignment
 " minibufexpl - https://github.com/fholgado/minibufexpl.vim.git
+" Omnicomplete - more completion for programmers
 
 filetype plugin indent on     " required!
 "
