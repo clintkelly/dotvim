@@ -1,13 +1,12 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
+source ~/.vim/clint/vundle.vim
 set showmode
 set background=dark
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set showcmd
 syntax on
-
-v<leader>a :Align =<cr>
 
 " Can give you a visual clue if your code is going too far...
 " Requires vim 7.3
@@ -26,6 +25,11 @@ source ~/.vim/clint/whitespace.vim
 source ~/.vim/clint/search.vim
 source ~/.vim/clint/splitting_and_opening.vim
 source ~/.vim/clint/statusline.vim
-source ~/.vim/clint/vundle.vim
 source ~/.vim/clint/color.vim
 
+" Ultisnips should work with tab and shift-tab
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Does not work for scala somehow...

@@ -33,21 +33,26 @@ Bundle 'Conque-Shell'
 " non github repos
 " Fast opening of files:
 Bundle 'git://git.wincent.com/command-t.git'
-" snipmate - code snippets
-"Bundle 'snipMate'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
 " For ctags
 Bundle 'Tagbar'
 " Perl5-powered search in vim
-Bundle 'ack.vim'
+"Bundle 'ack.vim'
 " Tab completion when writing code
-Bundle 'SuperTab'
-Bundle 'JSON.vim'
+"Bundle 'SuperTab'
+"Bundle 'JSON.vim'
 
-" Optional:
-Bundle "honza/vim-snippets"
+" Various version of snipmate (for boilerplate code)
+Bundle 'UltiSnips'
+" Bundle 'honza/vim-snippets'
+"Bundle 'snipMate'
+"Bundle 'garbas/vim-snipmate'
+" Snips for scala
+Bundle 'spiroid/vim-ultisnip-scala'
+" Scala syntax, etc.
+Bundle 'derekwyatt/vim-scala'
+
 " ...
 " Others to check out
 " abolish - for renaming variables in code
