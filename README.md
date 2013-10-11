@@ -8,7 +8,7 @@ Clone this directory as .vim:
 git clone git@github.com:clintkelly/dotvim.git .vim
 
 Clone Vundle:
-git clone http://github.com/gmarik/vundle.git ~/.vim/bundle
+git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 Sym link .vimrc
 ln -s .vim/clint/vimrc.vim .vimrc

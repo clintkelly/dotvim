@@ -21,6 +21,9 @@ let g:ConqueTerm_CWInsert = 1
 " Remap esc maybe to "df"
 inoremap df <ESC>
 
+nnoremap v V
+nnoremap V v
+
 source ~/.vim/clint/whitespace.vim
 source ~/.vim/clint/search.vim
 source ~/.vim/clint/splitting_and_opening.vim
@@ -43,3 +46,14 @@ set omnifunc=javacomplete#Complete
 " :chdir your/project/root
 " This makes ^wf on a classname a very nice feature for navigating a large
 " project.
+
+" Easy toggling for tagbar
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" Make DDL files look like SQL
+autocmd BufNewFile,BufRead *.ddl :set syn=sql
+
+" Not sure how this got screwed up...
+autocmd BufNewFile,BufRead *.java :set textwidth=100
+
+autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
