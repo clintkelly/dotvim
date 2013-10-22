@@ -29,6 +29,7 @@ source ~/.vim/clint/search.vim
 source ~/.vim/clint/splitting_and_opening.vim
 source ~/.vim/clint/statusline.vim
 source ~/.vim/clint/color.vim
+source ~/.vim/clint/coding.vim
 
 " Set UltiSnips to use something other than tab, so that we can use SuperTab
 " at the same time
@@ -57,3 +58,15 @@ autocmd BufNewFile,BufRead *.ddl :set syn=sql
 autocmd BufNewFile,BufRead *.java :set textwidth=100
 
 autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
+
+" Tell ctrlp to ignore .class and .html
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class     " MacOSX/Linux
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|html|class)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+
+" Call custom function to put function arguments onto a new line
+nnoremap <leader>, :call AutoIndentVarList()

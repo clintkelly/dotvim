@@ -24,7 +24,8 @@ Bundle 'surround.vim'
 " Nice color scheme
 " Bundle 'molokai'
 " Shell support within vim
-Bundle 'Conque-Shell'
+"Bundle 'Conque-Shell'
+Bundle 'vim-scripts/Conque-Shell'
 " Another color scheme
 " Bundle 'zenburn'
 
