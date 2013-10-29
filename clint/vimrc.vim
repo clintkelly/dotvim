@@ -10,7 +10,7 @@ syntax on
 
 " Can give you a visual clue if your code is going too far...
 " Requires vim 7.3
-" set colorcolumn=100
+"set colorcolumn=100
 
 " Quick shortcut to start conque
 nnoremap <leader>c :ConqueTerm zsh
