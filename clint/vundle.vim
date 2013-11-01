@@ -65,6 +65,9 @@ Bundle 'derekwyatt/vim-scala'
 " Avro syntax
 Bundle 'http://github.com/dln/avro-vim/'
 
+" Python folding
+Bundle 'tmhedberg/SimpylFold'
+
 
 " Specific java support
 " Bundle 'vim-scripts/javacomplete.git'
