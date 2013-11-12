@@ -7,57 +7,29 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
-" original repos on github
+
+" Git / vim integration
 Bundle 'tpope/vim-fugitive'
+
+" Standard settings
 Bundle 'tpope/vim-sensible'
+
+" Useful shortcuts (e.g., [q and ]q in quickfix)
 Bundle 'tpope/vim-unimpaired'
+
 " Move through files easier
 Bundle 'Lokaltog/vim-easymotion'
-" Easily open files
-"Bundle 'ctrlp'
-Bundle 'kien/ctrlp.vim'
-" Syntax checking
-" Nice, but *really* slow on writes...
-"Bundle 'Syntastic'
-Bundle 'surround.vim'
-" Nice color scheme
-" Bundle 'molokai'
-" Shell support within vim
-"Bundle 'Conque-Shell'
-Bundle 'vim-scripts/Conque-Shell'
-" Another color scheme
-" Bundle 'zenburn'
 
-" [for HTML] Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
-" [Has no docs I can find easily] Bundle 'L9'
-" [Searching for tags, files, etc.] Bundle 'FuzzyFinder'
-" non github repos
-" Fast opening of files:
-"Bundle 'git://git.wincent.com/command-t.git'
-"Bundle 'MarcWeber/vim-addon-mw-utils'
-"Bundle 'tomtom/tlib_vim'
+" Easily open files
+Bundle 'kien/ctrlp.vim'
+
+Bundle 'surround.vim'
+
+" Shell support within vim
+Bundle 'vim-scripts/Conque-Shell'
 
 " For ctags
 Bundle 'Tagbar'
-
-" Perl5-powered search in vim
-"Bundle 'ack.vim'
-" Tab completion when writing code
-" Bundle 'ervandew/supertab'
-
-"Bundle 'SuperTab'
-"Bundle 'JSON.vim'
-
-" Various version of snipmate (for boilerplate code)
-" Bundle 'UltiSnips'
-
-" Bundle 'honza/vim-snippets'
-"Bundle 'snipMate'
-"Bundle 'garbas/vim-snipmate'
-" Snips for scala
-" Bundle 'spiroid/vim-ultisnip-scala'
 
 " Scala syntax, etc.
 Bundle 'derekwyatt/vim-scala'
@@ -67,6 +39,8 @@ Bundle 'http://github.com/dln/avro-vim/'
 
 " Python folding
 Bundle 'tmhedberg/SimpylFold'
+
+Bundle 'keepcase.vim'
 
 
 " Specific java support
@@ -91,6 +65,37 @@ Bundle 'tmhedberg/SimpylFold'
 " nerdtree?
 " minibufexpl - https://github.com/fholgado/minibufexpl.vim.git
 " Omnicomplete - more completion for programmers
+
+" Perl5-powered search in vim
+"Bundle 'ack.vim'
+" Tab completion when writing code
+" Bundle 'ervandew/supertab'
+
+"Bundle 'SuperTab'
+"Bundle 'JSON.vim'
+
+" Various version of snipmate (for boilerplate code)
+" Bundle 'UltiSnips'
+
+" Bundle 'honza/vim-snippets'
+"Bundle 'snipMate'
+"Bundle 'garbas/vim-snipmate'
+" Snips for scala
+" Bundle 'spiroid/vim-ultisnip-scala'
+" Syntax checking
+" Nice, but *really* slow on writes...
+"Bundle 'Syntastic'
+" Another color scheme
+" Bundle 'zenburn'
+" [for HTML] Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" vim-scripts repos
+" [Has no docs I can find easily] Bundle 'L9'
+" [Searching for tags, files, etc.] Bundle 'FuzzyFinder'
+" non github repos
+" Fast opening of files:
+"Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'tomtom/tlib_vim'
 
 filetype plugin indent on     " required!
 "

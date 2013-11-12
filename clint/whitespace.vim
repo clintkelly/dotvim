@@ -34,6 +34,6 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 nnoremap <silent> <leader>W :call <SID>StripTrailingWhitespaces()<CR>
-" autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.py,*.js,*.scala,*.java,*.avdl :call <SID>StripTrailingWhitespaces()
 
 

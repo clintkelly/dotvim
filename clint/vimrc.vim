@@ -52,7 +52,7 @@ set omnifunc=javacomplete#Complete
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 " Make DDL files look like SQL
-autocmd BufNewFile,BufRead *.ddl :set syn=sql
+autocmd BufNewFile,BufRead *.ddl :set syn=ddl
 
 " Not sure how this got screwed up...
 autocmd BufNewFile,BufRead *.java :set textwidth=100
@@ -66,7 +66,7 @@ autocmd BufRead,BufNewFile *.py :set nosmartindent
 autocmd BufRead,BufNewFile *.py :set cindent
 
 " Tell ctrlp to ignore .class and .html
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.png     " MacOSX/Linux
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|html|class)$',
@@ -110,3 +110,40 @@ let type_scala.scope2kind = {
   \ 'case class'     : 'r'
 \ }
 "let s:known_types.scala = type_scala
+" customize colors a little bit (should be a different file)
+hi scalaNew gui=underline
+hi scalaMethodCall gui=italic
+hi scalaValName gui=underline
+hi scalaVarName gui=underline
+
+" Worth a shot...
+"syn region myFold start="{" end="}" contains=ALL transparent fold
+"syn sync fromstart
+"set foldmethod=syntax
+" Vim Compiler File
+" Compiler:	maven2
+" Maintainer:	Ronald Tschalär <ronald@innovation.ch>
+" Last Change:	Tue, 18 Apr 2006 03:08:12 PDT
+
+if exists("current_compiler")
+    finish
+endif
+let current_compiler = "maven2"
+
+if exists(":CompilerSet") != 2		" older Vim always used :setlocal
+  command -nargs=* CompilerSet setlocal <args>
+endif
+
+CompilerSet makeprg=mvn
+
+CompilerSet errorformat=
+    \%-G[%\\(WARNING]%\\)%\\@!%.%#,
+    \%A%[%^[]%\\@=%f:[%l\\,%v]\ %m,
+    \%W[WARNING]\ %f:[%l\\,%v]\ %m,
+    \%-Z\ %#,
+    \%-Clocation\ %#:%.%#,
+    \%C%[%^:]%#%m,
+    \%-G%.%#
+
+" Keeps at lease ten lines above and below the cursor at all times!
+set scrolloff=10
